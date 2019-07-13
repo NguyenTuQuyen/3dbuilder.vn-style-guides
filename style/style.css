@@ -41,6 +41,7 @@
   --linear-gradient-primary-rl: linear-gradient(90deg, rgba(5,117,230,1) 0%, rgba(2,28,122,1) 100%);
   --linear-gradient-secondary-lr: linear-gradient(90deg, rgba(0,27,56,1) 0%, rgba(3,82,160,1) 100%);
   --linear-gradient-secondary-rl: linear-gradient(90deg, rgba(3,82,160,1) 0%, rgba(0,27,56,1) 100%);;
+  --border-line: 1px solid var(--gray-3);
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -117,7 +118,7 @@ body {
   margin: 0px 5px 5px 32px;
   color: var(--blue-primary);
   font-size: var(--font-l);
-  border-bottom: 1px solid rgba(255,255,255,.5);
+  border-bottom: var(--border-line);
 }
 .menu-group{
   margin-bottom: 20px;
@@ -352,6 +353,9 @@ body {
 .text-gray-3{
   color: var(--gray-3);
 }
+.text-white{
+  color: white;
+}
 /* color-bg-&-text */
 
 .button{
@@ -359,16 +363,18 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 20px;
+  font-weight: normal;
 }
 .button:hover{
   text-decoration: none;
   color: white;
+  cursor:pointer; 
 }
 .button-primary{
   background: var(--linear-gradient-primary-lr);
 }
 .button-primary:hover{
-  background: var(--linear-gradient-secondary-lr)
+  background: var(--linear-gradient-secondary-lr);
 }
 .button-download-font{
   position: absolute;
@@ -383,7 +389,7 @@ body {
   width: 100%;
   padding-bottom: 8px;
   margin-bottom: 8px;
-  border-bottom: 1px solid var(--gray-3)
+  border-bottom: var(--border-line);
 }
 .list-item-row{
   display: inline-flex;
@@ -444,42 +450,120 @@ a:hover{
   box-shadow: var(--box-shadow-xxl);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  border-radius: 4px;
 }
 .action-panel-header{
-  display: flex;
-  flex-direction: column; 
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 30px 20px;
+}
+.action-panel-info > .action-panel-header{
   color: white;
-  padding: 10px 20px;
-  min-height: 80px;
-}
-.action-panel-close-button{
-  width: 100%;
-  text-align: right;
-  color: rgba(255,255,255,0.9);
-  font-size: var(--font-l);
-  font-weight: thin;
-}
-.action-panel-close-button > p {
-  text-align: right;
-  background-color: rgba(255,255,255,0.2);
-  width: 25px;
-  height: 25px;
-}
-.action-panel-title{
-  margin: auto auto; 
-}
-.action-panel-content{
-  padding: 10px 20px;
-  text-align: center;
 }
 .action-panel-info{
   width: 250px;
   height: 300px;
 }
+.action-panel-close-button{
+  text-align: center;
+  font-size: var(--font-xm-l);
+  text-transform: uppercase;
+  color: var(--blue-primary);
+  padding: 5px 20px 5px 20px;
+  margin-bottom: 5px;
+  border-top: var(--border-line);
+  font-weight: bold;
+  cursor: pointer;
+}
+.action-panel-close-button:hover{
+  border-radius: 20px; 
+  background-color: var(--red-1);
+  transition: 0.5s ease-in-out;
+  color: white;
+  margin: 0px 30% 5px 30%;
+}
+.action-panel-title{
+  text-align: center;
+  font-weight: bold;
+}
+.action-panel-content{
+  padding: 10px 20px;
+  text-align: center;
+}
 .action-panel-request{
   width: 250px;
-  height: 150px;
+  height: 200px;
 }
+.action-panel-request > .action-panel-header{
+  border-bottom: var(--border-line); 
+  padding: 10px 20px;
+}
+.request-button-group{
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 0px 15px;
+}
+.button-no-bg{
+  border-radius: 20px;
+  border: 1px solid var(--blue-primary);
+  color: var(--blue-primary);
+  padding: 0px 20px;
+  cursor: pointer;
+}
+.button-apply:hover{
+  background: var(--blue-primary);
+  color: white;
+  transition: 0.3s;
+}
+.button-cancel{
+  border: none;
+}
+.button-cancel:hover{
+  text-decoration: underline;
+}
+.card-item-avatar{
+  padding: 30px 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.avatar-group{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 25px;
+}
+.avatar-title{
+  font-size: var(--font-xm-l);
+  text-align: center;
+}
+.avatar-image{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  padding-top: 10px;
+  text-align: center;
+  margin: 10px 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.avatar-lg{
+  width: 64px;
+  height: 64px;
+  padding-top: 15px;
+  font-size: var(--font-l)
+}
+.avatar-xm{
+  width: 32px;
+  height: 32px;
+  padding-top: 8px;
+  font-size: var(--font-xm-l)
+}
+
+
+
+
 
 
 @media(max-width: 768px){
