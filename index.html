@@ -36,18 +36,18 @@
       <p class="headline">UI Guidelines</p>
       <a href="#typography">Typography</a>
       <a href="#action-panel">Action Panel</a>
-      <a href="#">Avatars</a>
-      <a href="#">Buttons</a>
-      <a href="#">Cards</a>
-      <a href="#">Data Visualization</a>
-      <a href="#">Forms</a>
-      <a href="#">Grid</a>
-      <a href="#">Hero</a>
-      <a href="#">Modal</a>
-      <a href="#">Navigation</a>
-      <a href="#">Notifications</a>
-      <a href="#">Tables</a>
-      <a href="#">Tabs</a>
+      <a href="#avatars">Avatars</a>
+      <a href="#buttons">Buttons</a>
+      <a href="#cards">Cards</a>
+      <a href="#data-visualization">Data Visualization</a>
+      <a href="#forms">Forms</a>
+      <a href="#grid">Grid</a>
+      <a href="#hero">Hero</a>
+      <a href="#modal">Modal</a>
+      <a href="#navigation">Navigation</a>
+      <a href="#notifications">Notifications</a>
+      <a href="#tables">Tables</a>
+      <a href="#tabs">Tabs</a>
     </div>
   </div>
   <div class="nav-group">
@@ -266,6 +266,17 @@
               <div class="color-description">
                 <div class="color-header">Red 2</div>
                 <div class="color-props">
+                  <div><strong>Hex: </strong>#E63422</div>
+                  <div><strong>RGB: </strong>rgb(230,52,34)</div>
+                  <div><strong>Pantone: </strong>3556 C</div>
+                </div>
+              </div>
+            </div>
+            <div class="card-item color-palette-item">
+              <div class="color-spread red-3"></div>
+              <div class="color-description">
+                <div class="color-header">Red 3</div>
+                <div class="color-props">
                   <div><strong>Hex: </strong>#ffdad8</div>
                   <div><strong>RGB: </strong>rgb(255,218,216)</div>
                   <div><strong>Pantone: </strong>705 C</div>
@@ -429,7 +440,7 @@
             Our fonts are suitable for both English and Vietnamese. This is a popular, clear and readable font, very
             suitable for showing on website and printing.
           </div>
-          <a class="button button-primary button-download-font"
+          <a class="button button-primary button-m button-download-font"
             href="https://fonts.google.com/specimen/Roboto?selection.family=Roboto" target="_blank">Download Roboto
             Fonts</a>
         </div>
@@ -686,8 +697,8 @@
               <div class="action-panel-content">
                 <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry?</div>
                 <div class="request-button-group">
-                  <div class="button-no-bg button-cancel">Cancel</div>
-                  <div class="button-no-bg button-apply">Apply</div>
+                  <div class=" button-cancel">Cancel</div>
+                  <div class="button button-neutral button-xm ">Apply</div>
                 </div>
               </div>
             </div>
@@ -767,7 +778,9 @@
         <div class="header">Sizes</div>
         <div class="content">
           <div class="description">
-            For consistency, avatar sizes are limited to 3 sizes (32px, 48px, and 64px). Having these components fixed will keep all of our components uniform across every product. In mobile applications, we suggest using a 32px sized avatar.
+            For consistency, avatar sizes are limited to 3 sizes (32px, 48px, and 64px). Having these components fixed
+            will keep all of our components uniform across every product. In mobile applications, we suggest using a
+            32px sized avatar.
           </div>
           <div class="card-item card-item-avatar">
             <div class="avatar-group">
@@ -786,7 +799,292 @@
         </div>
       </div>
     </div>
-  </div>
+    <div class="content-box">
+      <a name="buttons"></a>
+      <div class="banner">
+        <div class="title-text">Buttons</div>
+        <div class="short-description">Our Button Styles and Usage.
+        </div>
+      </div>
+      <div class="content-group">
+        <div class="header">Buttons, Colors, Naming and Styles</div>
+        <div class="content">
+          <div class="card-item">
+            <div class="list">
+              <div class="list-item">
+                <div class="list-item-row list-item-row-button">
+                  <div class="list-item-col list-item-col-button">
+                    <div class=" button button-default button-m">Default (Blue)</div>
+                  </div>
+                  <div class="list-item-col">This our default button style because it also is the color of our links,
+                    which re-enforces that they are a clickable element</div>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-item-row list-item-row-button">
+                  <div class="list-item-col list-item-col-button">
+                    <div class="button button-primary button-m">Primary</div>
+                  </div>
+                  <div class="list-item-col">The rule is, there may only be one primary button on a screen at any given
+                    time.</div>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-item-row list-item-row-button">
+                  <div class="list-item-col list-item-col-button">
+                    <div class="button button-danger button-m">Danger (Red)</div>
+                  </div>
+                  <div class="list-item-col">The danger button is used to indicate a descructive action such as deleting
+                    a profile or removing an asset.</div>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-item-row list-item-row-button">
+                  <div class="list-item-col list-item-col-button">
+                    <div class="button button-neutral button-m">Neutral (White)</div>
+                  </div>
+                  <div class="list-item-col">Netural buttons are used when a screen requires many clickable elements
+                    that are in supporting roles. An example of this would be a large table with multiple actions. They
+                    are used to minimize distraction from the content they are supporting. They are also used in dialogs
+                    and a few other patterns where a second button is placed in close proximity to a primary or danger
+                    button.</div>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="list-item-row list-item-row-button">
+                  <div class="list-item-col list-item-col-button">
+                    <div class="button button-disabled button-m">Disabled</div>
+                  </div>
+                  <div class="list-item-col">For disabled buttons we want to make clear that the button cannot be
+                    interacted with. To do this we set the background color to gray, remove some effects such as :hover,
+                    :active, and :focus</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-group">
+        <div class="header">Buttons size</div>
+        <div class="content">
+          <div class="card-item">
+            <div class="button-size-title">Large</div>
+            <div class="button-group">
+              <div class="button-item button button-lg button-default"> Large</div>
+              <div class="button-item button button-lg button-primary"> Large</div>
+              <div class="button-item button button-lg button-danger"> Large</div>
+              <div class="button-item button button-lg button-neutral"> Large</div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="button-size-title">Medium</div>
+            <div class="button-group">
+              <div class="button-item button button-m button-default"> Medium</div>
+              <div class="button-item button button-m button-primary"> Medium</div>
+              <div class="button-item button button-m button-danger"> Medium</div>
+              <div class="button-item button button-m button-neutral"> Medium</div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="button-size-title">Small</div>
+            <div class="button-group">
+              <div class="button-item button button-xm button-default"> Small</div>
+              <div class="button-item button button-xm button-primary"> Small</div>
+              <div class="button-item button button-xm button-danger"> Small</div>
+              <div class="button-item button button-xm button-neutral"> Small</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-group">
+        <div class="header">Buttons Icons</div>
+        <div class="content">
+          <div class="card-item">
+            <div class="button-size-title">Large</div>
+            <div class="button-group">
+              <div class="button-item button button-lg button-default button-icon-lg"> <i class="fa fa-envelope-open"
+                  aria-hidden="true"></i></div>
+              <div class="button-item button button-lg button-primary button-icon-lg"> <i class="fa fa-bar-chart"
+                  aria-hidden="true"></i></div>
+              <div class="button-item button button-lg button-danger button-icon-lg"> <i class="fa fa-trash-o"
+                  aria-hidden="true"></i></div>
+              <div class="button-item button button-lg button-neutral button-icon-lg"> <i class="fa fa-home"
+                  aria-hidden="true"></i></div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="button-size-title">Medium</div>
+            <div class="button-group">
+              <div class="button-item button button-m button-default button-icon-m"> <i class="fa fa-envelope-open"
+                  aria-hidden="true"></i></div>
+              <div class="button-item button button-m button-primary button-icon-m"> <i class="fa fa-bar-chart"
+                  aria-hidden="true"></i></div>
+              <div class="button-item button button-m button-danger button-icon-m"> <i class="fa fa-trash-o"
+                  aria-hidden="true"></i></div>
+              <div class="button-item button button-m button-neutral button-icon-m"> <i class="fa fa-home"
+                  aria-hidden="true"></i></div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="button-size-title">Small</div>
+            <div class="button-group">
+              <div class="button-item button button-xm button-default button-icon-xm"> <i class="fa fa-envelope-open"
+                  aria-hidden="true"></i></div>
+              <div class="button-item button button-xm button-primary button-icon-xm"> <i class="fa fa-bar-chart"
+                  aria-hidden="true"></i></div>
+              <div class="button-item button button-xm button-danger button-icon-xm"> <i class="fa fa-trash-o"
+                  aria-hidden="true"></i></div>
+              <div class="button-item button button-xm button-neutral button-icon-xm"> <i class="fa fa-home"
+                  aria-hidden="true"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-group">
+        <div class="header">Buttons Icon & Text</div>
+        <div class="content">
+          <div class="card-item">
+            <div class="button-size-title">Large</div>
+            <div class="button-group">
+              <div class="button-item button button-lg button-default button-icon-text"> <i class="fa fa-envelope-open"
+                  aria-hidden="true"></i>Envelope</div>
+              <div class="button-item button button-lg button-primary button-icon-text"> <i class="fa fa-bar-chart"
+                  aria-hidden="true"></i>Bar chart</div>
+              <div class="button-item button button-lg button-danger button-icon-text"> <i class="fa fa-trash-o"
+                  aria-hidden="true"></i>Trash</div>
+              <div class="button-item button button-lg button-neutral button-icon-text"> <i class="fa fa-home"
+                  aria-hidden="true"></i>Home</div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="button-size-title">Medium</div>
+            <div class="button-group">
+              <div class="button-item button button-m button-default button-icon-text"> <i class="fa fa-envelope-open"
+                  aria-hidden="true"></i>Envelope</div>
+              <div class="button-item button button-m button-primary button-icon-text"> <i class="fa fa-bar-chart"
+                  aria-hidden="true"></i>Bar chart</div>
+              <div class="button-item button button-m button-danger button-icon-text"> <i class="fa fa-trash-o"
+                  aria-hidden="true"></i>Trash</div>
+              <div class="button-item button button-m button-neutral button-icon-text"> <i class="fa fa-home"
+                  aria-hidden="true"></i>Home</div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="button-size-title">Small</div>
+            <div class="button-group">
+              <div class="button-item button button-xm button-default button-icon-text"> <i class="fa fa-envelope-open"
+                  aria-hidden="true"></i>Envelope</div>
+              <div class="button-item button button-xm button-primary button-icon-text"> <i class="fa fa-bar-chart"
+                  aria-hidden="true"></i>Bar chart</div>
+              <div class="button-item button button-xm button-danger button-icon-text"> <i class="fa fa-trash-o"
+                  aria-hidden="true"></i>Trash</div>
+              <div class="button-item button button-xm button-neutral button-icon-text"> <i class="fa fa-home"
+                  aria-hidden="true"></i>Home</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-group">
+        <div class="header">Dropdowns</div>
+        <div class="content">
+          <div class="card-item">
+            <div class="button-group">
+              <div class="dropdown show">
+                <a class="btn button button-default button-lg dropdown-toggle" href="#" role="button"
+                  id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <div class="dropdown show">
+                <a class="btn button button-default button-m dropdown-toggle" href="#" role="button"
+                  id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <div class="dropdown show">
+                <a class="btn button button-default button-xm dropdown-toggle" href="#" role="button"
+                  id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-group">
+        <div class="header">Split Button</div>
+        <div class="content">
+          <div class="card-item">
+            <div class="button-group">
+              <div class="split-group">
+                <div class="btn-group">
+                  <button type="button" class="btn button button-lg button-default">Action</button>
+                  <button type="button"
+                    class="btn button button-lg button-default dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="split-group">
+                <div class="btn-group">
+                  <button type="button" class="btn button button-m button-neutral">Action</button>
+                  <button type="button" class="btn button button-m button-neutral dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="split-group">
+                <div class="btn-group">
+                  <button type="button" class="btn button button-xm button-danger">Action</button>
+                  <button type="button" class="btn button button-xm button-danger dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 <script>
   function openNav() {
